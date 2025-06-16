@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Final Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-... (truncated for brevity) ..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <span>Portfolio</span>
+        </div>
+        <div class="links">
+          <div class="link"><a href="#">About</a></div>
+          <div class="link"><a href="#">Education</a></div>
+
+          <div class="link"><a href="#">Skills</a></div>
+          <div class="link"><a href="#">Internships</a></div>
+          <div class="link"><a href="#">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="">About</a>
+          <a href="">Education</a>
+          <a href="">Skills</a>
+          <a href="">Internships</a>
+          <a href="">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="intro">
+        <p>Hello,I'm</p>
+        <p class="lakk">Lakkshmi R,I'm a</p>
+        <p class="typed-out">Software Programmer</p>
+      </div>
+
+      <div class="wrapper-container">
+        <div class="wrapper">
+          <p>
+            I am an enthusiastic final-year Computer Science Engineering student, I am passionate
+            about securing a role in a well-regarded company. I possess strong proficiency in Java,
+            C, and Python, and have foundational knowledge in JavaScript, HTML, and CSS. My
+            dedication to continuous learning and my drive to achieve excellence make me a strong
+            candidate for software development roles.
+          </p>
+        </div>
+        <div class="button-wrapper">
+          <button class="buttonitself">Check Resume</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function hamburg() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(0px)";
+    }
+    function cancel() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(-500px)";
+    }
+  </script>
+</html>
