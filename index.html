@@ -27,11 +27,17 @@
     <nav>
       <div class="nav-container">
         <div class="logo">
-          <span>Portfolio</span>
+          <span
+            ><font color="#a74aff"
+              ><p>Port<font color="white">folio</font></p></font
+            ></span
+          >
         </div>
         <div class="links">
-          <div class="link"><a href="#">About</a></div>
-          <div class="link"><a href="#">Education</a></div>
+          <div class="link">
+            <a href="#about">About</a>
+          </div>
+          <div class="link"><a href="#edu">Education</a></div>
 
           <div class="link"><a href="#">Skills</a></div>
           <div class="link"><a href="#">Internships</a></div>
@@ -42,7 +48,7 @@
       <div class="dropdown">
         <div class="links">
           <a href="">About</a>
-          <a href="">Education</a>
+          <a href="#edu">Education</a>
           <a href="">Skills</a>
           <a href="">Internships</a>
           <a href="">Contact</a>
@@ -52,7 +58,7 @@
     </nav>
     <div class="main-container">
       <div class="intro">
-        <p>Hello,I'm</p>
+        <p id="about">Hello,I'm</p>
         <p class="lakk">Lakkshmi R,I'm a</p>
         <p class="typed-out">Software Programmer</p>
       </div>
@@ -68,19 +74,70 @@
           </p>
         </div>
         <div class="button-wrapper">
-          <button class="buttonitself">Check Resume</button>
+          <button class="buttonitself" id="show-btn">Check Resume</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="education">
+      <h1 class="h1-education" id="edu">Education</h1>
+      <p class="edu-details-p">Here are my Education Details below</p>
+      <div class="edubox-wrapper">
+        <div class="edu-box">
+          <h1 class="h1-college">College</h1>
+          <div class="college-content">
+            <p class="college-p"><font color="#a74aff">University: </font>Anna University</p>
+            <p class="college-p">
+              <font color="#a74aff">College:</font> Anjalai Ammal Mahalingam Engineering College
+            </p>
+            <p class="college-p">
+              <font color="#a74aff">Course:</font> BE in Computer Science & Engineering
+            </p>
+
+            <p class="college-paragraph">
+              I completed my <font color="#a74aff">UnderGraduation degree</font> , BE in Computer
+              Science & Engineering in Anjalai Ammal Mahalingam Engineering College in Anna
+              University.
+            </p>
+            <div class="cgpa-yr">
+              <div class="cgpa-group">
+                <p class="btncgpa">CGPA</p>
+                <p class="cgpa-p">: 8.73</p>
+              </div>
+              <div class="cgpa-group">
+                <p class="btncgpa">Graduation</p>
+                <p class="cgpa-p">:2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="edubox-wrapper">
+        <div class="edu-box">
+          <h1 class="h1-college">School</h1>
+          <div class="college-content">
+            <p class="college-p">
+              <font color="#a74aff">School:</font> Sri Shanmuka Matriculation Hr.Sec School
+            </p>
+            <p class="college-p"><font color="#a74aff">Completion:</font> HSC</p>
+            <p class="college-paragraph">
+              I completed my <font color="#a74aff">HSC</font> with acquiring much knowledge and a
+              good percentage , in Sri Shanmuka Matriculation Hr.sec School in Mannargudi.
+            </p>
+            <div class="per-yr">
+              <div class="cgpa-group">
+                <p class="btncgpa">Per</p>
+                <p class="cgpa-p">: 94.26%</p>
+              </div>
+              <div class="cgpa-group">
+                <p class="btncgpa">Completion</p>
+                <p class="cgpa-p">:2021</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
-  <script>
-    function hamburg() {
-      const navbar = document.querySelector(".dropdown");
-      navbar.style.transform = "translateY(0px)";
-    }
-    function cancel() {
-      const navbar = document.querySelector(".dropdown");
-      navbar.style.transform = "translateY(-500px)";
-    }
-  </script>
+  <script src="script.js"></script>
 </html>
