@@ -385,7 +385,7 @@ nav {
   flex: 1 1 clamp(16rem, 28vw, 20rem);
   max-width: 100%;
   flex: 1 1 22rem;
-  min-width: 22rem;
+  min-width: 31.25rem;
 }
 
 .edu-box-skills:hover {
@@ -394,6 +394,7 @@ nav {
 .img-skill {
   width: clamp(1.5rem, 2.5vw + 1rem, 2.5rem);
   min-width: 2rem;
+  padding: 5px;
 }
 
 .skill-content {
@@ -421,15 +422,31 @@ nav {
   justify-content: center;
   gap: clamp(1rem, 3vw, 2.5rem);
 }
+@media (max-width: 1080px) {
+  .edu-box-skills {
+    min-width: 27rem;
+  }
+}
+@media (max-width: 900px) {
+  .edu-box-skills {
+    min-width: 24rem;
+  }
+}
+@media (max-width: 710px) {
+  .edu-box-skills {
+    min-width: 20rem;
+  }
+}
 @media (max-width: 380px) {
   .skill-content {
     display: flex;
     flex-direction: column;
   }
   .edu-box-skills {
-    min-width: 0;
+    min-width: 13rem;
   }
 }
+
 
 
 
