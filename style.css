@@ -4,6 +4,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
   overflow-x: hidden;
 }
@@ -110,7 +115,6 @@ nav {
   padding-right: 5rem;
   gap: 4rem;
   justify-content: flex-start;
-  /* flex-wrap: wrap; */
 }
 
 .intro {
@@ -312,7 +316,6 @@ nav {
 .cgpa-yr {
   display: flex;
   justify-content: center;
-  /* gap: clamp(1rem, 4vw, 6rem); */
   gap: clamp(0.4rem, 2.5vw, 3rem);
 }
 .per-yr {
@@ -331,7 +334,6 @@ nav {
   font-weight: bolder;
   color: white;
   white-space: nowrap;
-  /* padding: clamp(0.25rem, 0.5vw, 0.75rem) clamp(0.5rem, 1.5vw, 1.25rem); */
   padding: clamp(0.18rem, 0.6vw, 0.7rem) clamp(0.4rem, 2vw, 1rem);
 
   display: inline-flex;
@@ -370,6 +372,65 @@ nav {
     align-items: center;
   }
 }
+
+/* SKILLS */
+.edu-box-skills {
+  margin-top: 4rem;
+  width: fit-content;
+  outline: solid 1px #7a00cc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem #a74aff;
+  margin-inline: auto;
+  transition: 0.5s ease;
+  flex: 1 1 clamp(16rem, 28vw, 20rem);
+  max-width: 100%;
+  flex: 1 1 22rem;
+  min-width: 22rem;
+}
+
+.edu-box-skills:hover {
+  transform: scale(1.05);
+}
+.img-skill {
+  width: clamp(1.5rem, 2.5vw + 1rem, 2.5rem);
+  min-width: 2rem;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 3vw, 4rem);
+}
+
+.fe-p {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: bold;
+}
+.whole-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+}
+@media (max-width: 380px) {
+  .skill-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .edu-box-skills {
+    min-width: 0;
+  }
+}
+
 
 
 
