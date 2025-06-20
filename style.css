@@ -372,6 +372,21 @@ nav {
     align-items: center;
   }
 }
+@media (max-width: 500px) {
+  .college-paragraph {
+    display: none;
+  }
+  .cgpa-yr {
+    padding-top: 1rem;
+  }
+  .per-yr {
+    padding-top: 1rem;
+  }
+  .college-p {
+    /* padding-top: clamp(0.75rem, 0.85rem + 0.4vw, 1.2rem); */
+    padding-top: clamp(0.55rem, 0.65rem + 0.25vw, 1.2rem);
+  }
+}
 
 /* SKILLS */
 .edu-box-skills {
@@ -441,9 +456,133 @@ nav {
   .skill-content {
     display: flex;
     flex-direction: column;
+    padding: clamp(0.75rem, 2vw, 2.5rem);
+    gap: clamp(0.75rem, 2.5vw, 4rem);
+  }
+  .column {
+    gap: clamp(0.3rem, 1vw, 4rem);
   }
   .edu-box-skills {
     min-width: 13rem;
+  }
+}
+/* INTERNSHIPS */
+.intership {
+  color: #fff;
+  padding-top: clamp(10rem, 15vw, 25.625rem);
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  overflow-y: visible;
+}
+.internship-wrapper {
+  width: 100%;
+  max-width: 700px;
+  outline: solid 1px #7a00cc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 clamp(10px, 2vw, 20px) #a74aff;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: clamp(1rem, 2vw, 2rem);
+  padding-top: 0;
+}
+.edu-box-intern {
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 1300px;
+  outline: solid 1px #7a00cc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem #a74aff;
+
+  transition: 0.5s ease;
+}
+.edu-box-intern:hover {
+  transform: scale(1.05);
+}
+.internbox-p {
+  color: white;
+  font-size: clamp(1.1rem, 1rem + 1.2vw, 1.875rem);
+  padding-top: clamp(0.95rem, 0.9rem + 0.5vw, 1.2rem);
+}
+.internbox-p-special {
+  /* padding-top: clamp(0.5rem, 0.25rem + 1vw, 1rem); */
+  padding-top: clamp(0.95rem, 0.9rem + 0.5vw, 1.2rem);
+
+  display: none;
+}
+.intern-paragraph {
+  color: white;
+  font-size: clamp(1rem, 0.9rem + 0.8vw, 1.4375rem);
+  line-height: 1.4;
+  padding-top: clamp(0.5rem, 0.25rem + 1vw, 1rem);
+}
+.intern-whole-para {
+  margin-top: 0.625rem;
+  padding: clamp(1rem, 1rem + 2vw, 2rem);
+}
+.h1-intern {
+  color: white;
+  font-weight: bold;
+  color: #a74aff;
+  background: linear-gradient(90deg, #b000b5, #7a00cc, #4b0055);
+  width: auto;
+  height: clamp(2rem, 1rem + 3vw, 3.75rem);
+  border-radius: 10px;
+  font-size: clamp(1.2rem, 1rem + 1.5vw, 2.1875rem);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+.intern-content {
+  padding: clamp(1.2rem, 1rem + 1.5vw, 2rem);
+  padding-top: 0;
+}
+@media (max-width: 1000px) {
+  .internship-wrapper {
+    max-width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .intern-whole-para {
+    display: none;
+  }
+  .internship-wrapper {
+    outline: none;
+    border-radius: none;
+    box-shadow: none;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: none;
+  }
+  .internbox-p-special {
+    color: white;
+    font-size: clamp(0.75rem, 1rem + 1.2vw, 1.875rem);
+    display: block;
+  }
+}
+@media (max-width: 656px) {
+  .internbox-p {
+    font-size: clamp(1.2rem, 1.5vw + 0.5rem, 1.5rem);
+    white-space: normal;
+  }
+  .internbox-p-special {
+    font-size: clamp(1.2rem, 1.5vw + 0.5rem, 1.5rem);
+    white-space: normal;
+  }
+}
+@media (max-width: 400px) {
+  .h1-intern {
+    font-size: clamp(1rem, 0.9rem + 1vw, 2.1875rem);
+  }
+  .internbox-p,
+  .internbox-p-special {
+    padding-top: clamp(0.55rem, 0.65rem + 0.25vw, 1.2rem);
+  }
+  .intern-content {
+    padding: clamp(0.55rem, 0.9rem + 1vw, 2rem);
+    padding-top: 0;
   }
 }
 
